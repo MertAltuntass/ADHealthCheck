@@ -2,29 +2,23 @@
 
 AD Health Check işlemini anlatacağım. Bu işlemi Task Scheduler ile planlamasını yaparak günlük olarak Active Directory takibimizi yapabiliriz. Scriptte Ping Testi, Netlogon Testi, NTDS Testi, DNS Testi, Replication, Sysvol, Services gibi testleri bulunmaktadır.
 
-Bu yazımda ana kaynak olarak Microsoft MVP’lerinden Sukhija Vikas’ın yazmış olduğu Powershell Scriptini kullanacağız. Scripti hazır olarak kullanmak yerine ben Scripte kendi katma değerimi katmak istedim. Scriptin güncellenmiş haline buradan ulaşabilirsiniz. 
-
-Not: Gmail hesabı üzerinden gönderim sağlayacaksanız “Less Secure Apps” özelliğini aktif etmeniz gerekmektedir. İlgili dokumana bu link üzerinden ulaşabilirsiniz.
+Bu yazımda ana kaynak olarak Microsoft MVP’lerinden Sukhija Vikas’ın yazmış olduğu Powershell Scriptini kullanacağız.
+Not: Gmail hesabı üzerinden gönderim sağlayacaksanız “Less Secure Apps” özelliğini aktif etmeniz gerekmektedir. 
 
 Bu scripti indirdikten sonrasında editleyerek kendimize uygun hale getirmemiz gerekmektedir.
 İndirdiğimiz scripti sağ tıklayıp “Edit” seçeneğine tıklıyoruz. Böylece PowerShell ISE açılacaktır. Ben göndermesi için yazdığım kısmı en aşağıya ekledim.
 
-$From = Gönderici “abc@abc.com”
+$From = Gönderici E-posta adresi
 
-$To = Alıcı “abc@abc.com”
+$To = Alıcı  E-posta adresi”
 
-$Cc = CC’deki Alıcı “cba@abc.com”
+$Cc = CC’deki Alıcı CC birine eklemek isterseniz buraya mail adresini girebilirsiniz.
 
-$Subject = Konu ”Health Check”
+$Subject = Konu Active Directory Health Check olarak bıraktım isterseniz değiştirebilirsiniz.
 
-$SMTPServer = SMTP sunucumuz “smtp@abc.com”
+$SMTPServer = SMTP sunucunuz (gmail,yandex veya exchange)
 
-$SMTPPort = Port “587”
+$SMTPPort = İlgili Port numarası
 
-$pass Gönderici şifreniz
+$pass Gönderici şifreniz bu mail şifrenizdir.
 
-
-
- Detaylı bilgi için https://www.mshowto.org/ad-health-check.html adresinden makalemi okuyabilirsiniz.
-
- Konuyla ilgili sorularınızı iletisim@zeynelugurlu.com adresinden bana ulaştırabilirsiniz.
