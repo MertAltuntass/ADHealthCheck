@@ -8,6 +8,9 @@ Not: Gmail hesabı üzerinden gönderim sağlayacaksanız “Less Secure Apps”
 Bu scripti indirdikten sonrasında editleyerek kendimize uygun hale getirmemiz gerekmektedir.
 İndirdiğimiz scripti sağ tıklayıp “Edit” seçeneğine tıklıyoruz. Böylece PowerShell ISE açılacaktır. Ben göndermesi için yazdığım kısmı en aşağıya ekledim.
 
+
+Bu adımları mutlaka yapmanız gerekmektedir bu adımlar edit dediğiniz sayfanın en alt bölümünde mevcuttur isterseniz powershell içerisinden isterseniz notepad ile editleme işlemini yapabilirsiniz.
+
 $From = Gönderici E-posta adresi
 
 $To = Alıcı  E-posta adresi”
